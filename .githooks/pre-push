@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+unset GIT_DIR GIT_INDEX_FILE
+exec "$HOME/.claude/scripts/verify-project.sh" "$(git rev-parse --show-toplevel)"
